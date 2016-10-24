@@ -4,6 +4,20 @@
 *.o
 *.obj
 
+# Solution & Projects files
+*.sln
+*.vcxproj
+*.db
+*.suo
+*.db
+*.filters
+*.tlog
+*.pdb
+*.idb
+*.opendb
+*.ilk
+*.log
+
 # Precompiled Headers
 *.gch
 *.pch
@@ -21,9 +35,9 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
 *.out
 *.app
+
