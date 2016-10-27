@@ -17,6 +17,6 @@ namespace math
 		inline ray(const ray& src) { origin = src.origin; direction = src.direction; }
 		inline explicit ray(vec3& point, vec3& dir) { origin = point; direction = dir; }
 
-		vec3 getPoint(float distance) const { return origin + (direction * distance); }
+		vec3 get_point(float distance) const { return origin + (direction * distance); }
 	};
 } // namespace math

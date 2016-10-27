@@ -3,37 +3,38 @@
 // Copyright (C) strelkovsky.com, Inc.
 //-----------------------------------------------------------------------------
 
+#include <cmath>
 #include "math.h"
 
 namespace math
 {
-	float Sqr(const float& val)
+	float sqr(const float val)
 	{
 		return val * val;
 	}
 
-	float Sqrt(const float& val)
+	float sqrt(const float val)
 	{
-		return sqrt(val);
+		return std::sqrtf(val);
 	}
 
-	float Abs(const float& val)
+	float abs(const float val)
 	{
-		return abs(val);
+		return std::abs(val);
 	}
 
-	float Cos(const float& angle)
+	float cos(const float angle)
 	{
-		return cosf(angle);
+		return std::cosf(angle);
 	}
 
-	float Sin(const float& angle)
+	float sin(const float angle)
 	{
-		return sinf(angle);
+		return std::sinf(angle);
 	}
 
-	float Tan(const float& angle)
+	float tan(const float angle)
 	{
-		return tanf(angle);
+		return std::tanf(angle);
 	}
 } // namespace math

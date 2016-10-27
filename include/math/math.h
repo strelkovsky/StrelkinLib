@@ -9,29 +9,36 @@
 
 namespace math
 {
-	const long double PI = 3.1415926535897932384626433832795;
+	const float PI = 3.14159265358979323846f;
 	const float EPSILON = 0.0001f;
 
-	const float math_radians = (float)(PI / 180.0f);
-	const float math_degrees = (float)(180.0f / PI);
-
-	float Sqr(const float& val);
-	float Sqrt(const float& val);
-
-	float Abs(const float& val);
-
-	float Cos(const float& angle)
+	inline float radians(float deg)
 	{
-		return cosf(angle);
+		return (PI / 180.f) * deg;
 	}
 
-	float Sin(const float& angle)
+	inline float degrees(float rad)
 	{
-		return sinf(angle);
+		return (180.f / PI) * rad;
 	}
 
-	float Tan(const float& angle)
+	inline float min(float a, float b)
 	{
-		return tanf(angle);
+		return std::fminf(a, b);
 	}
+
+	inline float max(float a, float b)
+	{
+		return std::fmaxf(a, b);
+	}
+
+	float sqr(const float val);
+	float sqrt(const float val);
+
+	float abs(const float val);
+
+	float cos(const float angle);
+	float sin(const float angle);
+
+	float tan(const float angle);
 } // namespace math

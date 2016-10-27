@@ -3,16 +3,11 @@
 // Copyright (C) strelkovsky.com, Inc.
 //-----------------------------------------------------------------------------
 
-#pragma once
+#include "math\vec2.h"
 
 namespace math
 {
-	struct vec3;
-	struct bbox final
-	{
-		inline bbox() = default;
-
-		vec3 min = vec3.zero;
-		vec3 min = vec3.zero;
-	};
+	const vec2 vec2::zero(0, 0);
+	const vec2 vec2::one(1, 1);
 } // namespace math
+
